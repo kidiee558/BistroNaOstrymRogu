@@ -73,7 +73,7 @@ export default function App() {
               <span className="text-[1.75rem] sm:text-4xl lg:text-7xl mt-1 font-serif text-wood-700 italic font-medium">Bistro dla Ciebie.</span>
             </h1>
             <p className="text-[1.1rem] md:text-xl text-wood-950 font-serif leading-relaxed max-w-lg mb-8">
-              Odkryj pozycje, które przygotowaliśmy z rzemieślniczą pasją i miłością do dobrego smaku.
+              Pyszne domowe jedzenie i najlepsze burgery w sercu Pelplina. Czekamy na Ciebie w Bistro na Ostrym Rogu!
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start w-full gap-4">
               <a href="#menu" className="w-full sm:w-auto bg-wood-950 text-wood-50 px-8 py-3 rounded-none font-serif text-lg tracking-wide hover:bg-wood-800 transition-all flex items-center justify-center gap-3 shadow-lg hover:shadow-2xl">
@@ -144,11 +144,13 @@ export default function App() {
                 <div className="space-y-5">
                   {category.items.map((item) => (
                      <div key={item.id} className="relative group/item flex flex-col w-full">
-                       <div className="flex items-end gap-2 md:gap-3 w-full">
-                         <h4 className="font-semibold text-[15px] md:text-xl text-wood-900 transition-colors leading-tight shrink-0 max-w-[75%]">
-                           {item.name}
-                         </h4>
-                         <div className="flex-1 border-b-[2px] border-dotted border-wood-300 md:mb-1.5 mb-[3px] min-w-[20px]"></div>
+                       <div className="flex items-end gap-2 w-full">
+                         <div className="flex-1 flex flex-wrap items-baseline gap-2">
+                            <h4 className="font-semibold text-[15px] md:text-xl text-wood-900 leading-tight">
+                              {item.name}
+                            </h4>
+                            <div className="flex-1 border-b-[2px] border-dotted border-wood-300 mb-[4px]"></div>
+                         </div>
                          <div className="font-serif font-bold text-wood-800 text-[15px] md:text-lg mb-0 shrink-0">
                            {item.price || "X PLN"}
                          </div>
