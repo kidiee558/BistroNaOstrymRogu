@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200..1000;1,9..40,200..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-wood-50: #fdfaf6;
+  --color-wood-100: #f4ecdf;
+  --color-wood-200: #e6d5bd;
+  --color-wood-300: #d4b995;
+  --color-wood-400: #b89566;
+  --color-wood-500: #a17b48;
+  --color-wood-600: #866236;
+  --color-wood-700: #6b4d2b;
+  --color-wood-800: #543d24;
+  --color-wood-900: #45311e;
+  --color-wood-950: #261a0f;
+  
+  --font-sans: "DM Sans", sans-serif;
+  --font-serif: "Lora", serif;
+}
+
+body {
+  @apply bg-[#fdfbf7] text-wood-950;
+  line-height: 1.6;
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menu-dots {
+  background-image: radial-gradient(circle, currentcolor 1px, transparent 1.5px);
+  background-size: 8px 4px;
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.3333%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-33.3333%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 40s linear infinite;
+  width: max-content;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 40s linear infinite;
+  width: max-content;
+}
+
+.animate-marquee-left:hover, .animate-marquee-right:hover {
+  animation-play-state: paused;
+}
+
+
