@@ -68,9 +68,9 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full relative z-20 flex pt-8 lg:pt-0">
           <div className="w-full lg:w-[60%] max-w-2xl pt-2 lg:pt-10 flex flex-col items-center text-center lg:items-start lg:text-left">
             <img src="/logo.png" alt="Logo" className="w-32 h-32 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain mb-4 origin-center lg:origin-left filter drop-shadow-xl" />
-            <h1 className="flex flex-col text-[2.2rem] sm:text-5xl lg:text-7xl font-serif font-bold text-wood-950 mb-4 leading-tight drop-shadow-sm">
-              <span className="whitespace-nowrap">Prawdziwy Smak.</span>
-              <span className="text-[1.75rem] sm:text-4xl lg:text-7xl mt-1">Bistro dla Ciebie.</span>
+            <h1 className="flex flex-col text-[2.2rem] sm:text-5xl lg:text-7xl font-bold mb-4 leading-tight drop-shadow-sm">
+              <span className="whitespace-nowrap font-serif text-wood-950">Prawdziwy Smak.</span>
+              <span className="text-[1.75rem] sm:text-4xl lg:text-7xl mt-1 font-serif text-wood-700 italic font-medium">Bistro dla Ciebie.</span>
             </h1>
             <p className="text-[1.1rem] md:text-xl text-wood-950 font-serif leading-relaxed max-w-lg mb-8">
               Odkryj pozycje, które przygotowaliśmy z rzemieślniczą pasją i miłością do dobrego smaku.
